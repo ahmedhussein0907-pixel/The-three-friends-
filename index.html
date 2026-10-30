@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAH STORE - تسوق منتجات مميزة بأسعار مناسبة واطلب بسهولة عبر واتساب.">
+  <meta name="theme-color" content="#101827">
+  <title>MAH STORE | المتجر الإلكتروني</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">أهلاً بك في MAH STORE — للطلب والاستفسار عبر واتساب: 01228452919</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="MAH STORE الصفحة الرئيسية"><span class="brand-mark">M</span><span>MAH <b>STORE</b><small>متجرك لكل ما تحب</small></span></a>
+    <nav class="desktop-nav"><a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a></nav>
+    <button class="cart-button" id="openCart" aria-label="فتح سلة المشتريات">السلة <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><span class="eyebrow">مرحباً بك في عالم التسوق</span><h1>اختيارات مميزة،<br><em>وتجربة تسوق أسهل.</em></h1><p>اكتشف منتجاتنا واختر ما يناسبك. اطلب بسهولة وسنتواصل معك لتأكيد طلبك.</p><a class="primary-button" href="#products">تسوق الآن <span>←</span></a></div>
+      <div class="hero-art" aria-label="ميداليات ودومينو من الإيبوكسي"><img src="images/medals-clubs.jpg" alt="ميداليات إيبوكسي"/><img src="images/domino-premium.jpg" alt="طقم دومينو إيبوكسي"/></div>
+    </section>
+
+    <section class="benefits" aria-label="مميزات المتجر"><div><span>✓</span><p><b>سهولة الطلب</b><small>اطلب في خطوات بسيطة</small></p></div><div><span>◇</span><p><b>منتجات مختارة</b><small>اختيارات تناسب احتياجك</small></p></div><div><span>☎</span><p><b>تواصل مباشر</b><small>نتابع طلبك عبر واتساب</small></p></div></section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading"><div><span class="eyebrow">تصفح المتجر</span><h2>منتجاتنا</h2><p>اختر المنتج الذي يعجبك وأضفه إلى السلة.</p></div><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن منتج..."></label></div>
+      <div class="category-row" id="categoryRow"><button class="category active" data-category="الكل">الكل</button><button class="category" data-category="دومينو إيبوكسي">دومينو إيبوكسي</button><button class="category" data-category="ميداليات إيبوكسي">ميداليات إيبوكسي</button></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>لا توجد منتجات تطابق بحثك حالياً.</p>
+    </section>
+
+    <section class="about-section" id="about"><div class="about-badge">MAH<br>STORE</div><div><span class="eyebrow">قصتنا</span><h2>أهلاً بك في MAH STORE</h2><p>نسعى لتقديم تجربة تسوق بسيطة وواضحة. تصفح المنتجات، أضف ما تريد إلى السلة، ثم أرسل طلبك مباشرة عبر واتساب.</p></div></section>
+    <section class="contact-section" id="contact"><div><span class="eyebrow">نحن هنا لمساعدتك</span><h2>هل لديك سؤال؟</h2><p>تواصل معنا للاستفسار عن الميداليات والدومينو وتفاصيل الطلب. رقم واتساب: 01228452919</p></div><a class="primary-button" id="contactWhatsApp" href="#">تواصل عبر واتساب <span>↗</span></a></section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">MAH STORE</a><p>© <span id="year"></span> MAH STORE — جميع الحقوق محفوظة</p><a href="#home">العودة للأعلى ↑</a></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><h2>سلة المشتريات</h2><button id="closeCart" class="icon-button" aria-label="إغلاق">×</button></div><div id="cartItems" class="cart-items"><p class="cart-empty">السلة فارغة حالياً.</p></div><div class="cart-bottom"><div class="total-line"><span>الإجمالي</span><strong id="cartTotal">0 ج.م</strong></div><button class="primary-button checkout-button" id="checkoutButton">إتمام الطلب عبر واتساب</button><small>سيتم إرسال المنتجات والإجمالي إليك لتأكيد الطلب.</small></div></aside>
+</body>
+</html>
